@@ -1,0 +1,15 @@
+{
+  "name": "console-v-app",
+  "version": "1.0.0",
+  "description": "This is a desktop app version of the Console V operating system",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joey Miller",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^24.1.2"
+  }
+}
