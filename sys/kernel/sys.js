@@ -4,12 +4,13 @@
 class System {
 	constructor() {
 		this.pwrSts = false; // Power off 
-		this.version = "5.3.0";
-		this.versionShort = "5.3";
+		this.version = "5.3.0"; // Full version, major.minor.patch
+		this.versionShort = "5.3"; // Short versionm major.minor
 		this.turnOffFlag = true; // This is used by power function to stop the global 'enter' fucntion from turning the system back on
 		this.program = false; //To see if a program is running
 		this.paused = false; //Used if system input is paused (progarm has taken over)
 		this.pauseStatus = null; //Store reason why system is paused
+		this.debug = false; //Debug mode
 	}
 
 	init_tb() {
@@ -92,4 +93,5 @@ class System {
 	}
 }
 
+// Initilize the sytem object
 var sys = new System();
